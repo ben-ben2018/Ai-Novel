@@ -1,0 +1,37 @@
+# Reduce build context size and avoid accidentally sending local secrets/artifacts.
+
+# Virtualenvs / caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+
+# Local env / secrets
+.env
+.env.*
+.envrc
+
+# Local databases / temp
+*.db
+*.db.*
+*.sqlite*
+*.sqlite3*
+.tmp/
+.tmp*/
+.chroma/
+.chroma*/
+
+# Reports
+.coverage*
+htmlcov/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

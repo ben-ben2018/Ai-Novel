@@ -1,0 +1,26 @@
+# Reduce build context size and avoid accidentally baking local secrets into the image.
+
+node_modules/
+dist/
+dist-ssr/
+.vite/
+coverage/
+.nyc_output/
+.eslintcache
+
+# Logs / temp
+*.log
+*.log.*
+.tmp/
+.tmp*/
+
+# Local env / secrets
+.env
+.env.*
+.envrc
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
